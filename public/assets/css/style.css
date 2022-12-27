@@ -1,0 +1,54 @@
+body{
+    
+}
+.nav {
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #c8a73b;
+}
+
+.centralizado{
+    text-align: center;
+}
+
+table{
+    text-align: center;
+}
+
+/* CRIACAO CLIENTE */
+.tituloCadastroCliente{
+    text-align: center;
+}
+.clienteCriacao {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.clienteCriacao .tituloCampo{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+    font-weight: bold;
+}
+.clienteCriacao input{
+    text-align: center;
+}
+
+h5{
+    color: white;
+}
+.dropdown .btn-secondary{
+    background-color: #c8a73b;
+    color: black;
+}
+.dropdown-item:hover {
+    background-color:  #c8a73b;
+}
+.btn-cliente:hover{
+    background-color: #c8a73b !important;
+    color: black;
+}
+.thead-dark {
+    background-color: red !important;
+}

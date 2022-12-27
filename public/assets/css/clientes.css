@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+
+}
+
+#cinza {
+    color: #666666;
+}
+
+#burgermenu {
+    color: #151e27;
+}
+
+#bloco-meio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#cor-cursor:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+.carrossel {
+    width: 21em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imgcarrossel {
+    width: 320px; /* you can use % */
+    height: 240px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+.badge-warning {
+    background-color: #c7a83a;
+}
+
+@media screen and (max-width:767px) {
+    .fc-toolbar.fc-header-toolbar
+    {
+        font-size: 60%
+    }
+}
