@@ -21,3 +21,4 @@ Technologies used:
 - Laravel
 - FullCalendar (a calendar framework based on JavaScript)
 - BootStrap
+- MariaDB
