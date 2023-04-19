@@ -18,6 +18,7 @@ class CreateAgendamentos extends Migration
             $table->integer('status')->default(0); // 0 nao confirmado, 1 confirmado, 2 cancelado
             $table->integer('auth')->default(1); // 1 aprovado/agendamento interno. 0 agendamento por cliente não aprovado pela clinica.
             $table->integer('del')->default(0);
+            $table->double('price')->default(0);
             $table->bigInteger('ord_id')->unsigned()->nullable();
             $table->bigInteger('clie_id')->unsigned()->nullable();
             $table->bigInteger('pro_id')->unsigned()->nullable();

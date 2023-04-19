@@ -40,6 +40,8 @@
                                value="{{ $cliente->clie_name }}: {{ $i }}">
                         <input type="text" class="form-control" name="ordemid"
                                value="{{ $ordem->id }}" id="ordemid" hidden="true">
+                        <input type="text" class="form-control" name="ser_id"
+                               value="{{ $ordem->ser_id }}" id="ser_id" hidden>
                     </div>
                     <div class="col-sm-12">
                         <label for="color" class="tituloCampo">Cor:</label>

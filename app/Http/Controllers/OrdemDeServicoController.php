@@ -190,6 +190,7 @@ class OrdemDeServicoController extends Controller
         $ordem = OrdemDeServico::find($request->ordemid);
         $cliente = Cliente::find($ordem->cli_id);
         $profissional = Profissional::find($ordem->pro_id);
+        $pagamento = Pagamento::where('ord_id', '=', $request->ordemid)->first();
 
         $agendamentosStart = Agendamento::select("*")->where('pro_id', '=', $profissional->id)
             ->whereRaw('? between start and end', [Carbon::parse($request->start)->addMinute()])->count();
@@ -210,7 +211,9 @@ class OrdemDeServicoController extends Controller
                 'del' => 0,
                 'clie_id' => $cliente->id,
                 'pro_id' => $profissional->id,
-                'ord_id' => $ordem->id
+                'ord_id' => $ordem->id,
+                'ser_id' => $request->ser_id,
+                'price' => $pagamento->pag_price
             ]);
 
             return response()->json(true);

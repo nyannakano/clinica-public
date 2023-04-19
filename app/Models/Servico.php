@@ -15,7 +15,12 @@ class Servico extends Model
     {
         return $this->belongsToMany(Profissional::class)->withTimestamps();
     }
-
+    public function ordemdeservicos() {
+        return $this->belongsToMany(OrdemDeServico::class);
+    }
+    public function agendamentos() {
+        return $this->belongsToMany(Agendamento::class);
+    }
     public function area(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Area::class);

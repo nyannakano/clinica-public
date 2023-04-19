@@ -61,9 +61,7 @@ class ServicosController extends Controller
         $servico->ser_sessions = $request->ser_sessions;
         $servico->ser_availability = $request->ser_availability;
         $servico->ser_time = $request->ser_time;
-        if (!$servico->ser_image == null) {
-            $servico->ser_image = $this->verificaImagem($request);
-        }
+        $servico->ser_image = $this->verificaImagem($request);
         $servico->save();
         $request->session()->flash('mensagem', "Servico $servico->ser_name editado com sucesso!");
 

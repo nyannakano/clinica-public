@@ -15,6 +15,11 @@ class Agendamento extends Model
         return $this->hasOne(OrdemDeServico::class);
     }
 
+    public function servico()
+    {
+        return $this->hasOne(Servico::class);
+    }
+
     public function profissional()
     {
         return $this->hasOne(Profissional::class);

@@ -54,7 +54,7 @@
 
                 <div class="carousel-item">
                     <a href="{{ route('home.agendar') }}"><img class="d-block w-100"
-                         src="{{ asset('/assets/storage/' . $servico->ser_image) }}"
+                         src="{{ asset('/storage' . $servico->ser_image) }}"
                          id="imgcarrossel"
                          alt="{{ $servico->ser_name }}">
                     <div class="carousel-caption d-md-block">

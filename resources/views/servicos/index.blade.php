@@ -140,7 +140,7 @@
                                         </div>
                                         <label for="ser_time" class="tituloCampo">Tempo mínimo para cada sessão (em minutos):</label>
                                         <div class="input-group mb-2">
-                                            <input type="number" class="form-control" name="ser_time"
+                                            <input type="text" class="form-control" name="ser_time"
                                                    value="{{ $servico->ser_time }}">
                                         </div>
                                         <label for="ser_time" class="tituloCampo">Disponível para agendamento por

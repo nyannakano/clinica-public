@@ -54,9 +54,9 @@
                     <div class="input-group mb-2">
                         <input type="number" required class="form-control" name="ser_sessions" placeholder="Quantidade de sessões">
                     </div>
-                    <label for="ser_time" class="tituloCampo">Tempo de duração (em minutos):</label>
+                    <label for="ser_time" class="tituloCampo">Tempo de duração (em horas):</label>
                     <div class="input-group mb-2">
-                        <input type="number" step="1" min="1" required class="form-control" name="ser_time" placeholder="EX: 60">
+                        <input type="text" required class="form-control" name="ser_time" placeholder="EX: 01:00:00">
                     </div>
                 </div>
                 <div class="col-sm-4"></div>

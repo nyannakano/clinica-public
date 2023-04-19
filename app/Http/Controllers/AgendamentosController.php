@@ -64,6 +64,7 @@ class AgendamentosController extends Controller
             $ordem = $request->ord_id;
             $cliente = $request->clie_id;
             $profissional = $request->pro_id;
+            $servico = $request->ser_id;
         } else {
             $ordem = null;
 
