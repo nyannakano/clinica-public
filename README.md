@@ -26,5 +26,5 @@ Technologies used:
 To get it working:
 You have to configure a .env and a MySQL database (or another database of your choice), in both .env and /config/database archive.
 You have to create a symlink to the storage for the images work properly.
-Run php artisan migrate
-Run php artisan db:seed
+Run php artisan migrate.
+Run php artisan db:seed.
